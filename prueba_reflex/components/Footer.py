@@ -2,8 +2,6 @@ import reflex as rx
 
 def Footer() -> rx.Component:
     return rx.vstack(
-        
-
         rx.hstack(
             rx.text("By @chuchito04"),
             rx.text("2024"),

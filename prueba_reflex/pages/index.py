@@ -84,8 +84,9 @@ def index() -> rx.Component:
             display="flex",
             align_items="center",
             justify_content="center",
-            margin_top="20vh"
+            margin_top="20vh",
         ),
         Footer(),
         height="100vh",
+        ##background_image="url(/dark.webp)",
     )
