@@ -1,9 +1,9 @@
 from sqlmodel import create_engine
+from dotenv import load_dotenv
+import os
 
-paimef_dev = "mysql+pymysql://paimef_user:Cromero252525@3.141.197.87[:3306]/purpura_semujeres"
-
-localhost = "mysql+pymysql://root@127.0.0.1:3306/municipios"
+load_dotenv()
 
 def connect():
-    engine = create_engine(localhost)
+    engine = create_engine(os.getenv("LOCALHOST"))
     return engine

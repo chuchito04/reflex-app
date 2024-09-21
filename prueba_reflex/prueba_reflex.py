@@ -1,9 +1,6 @@
 import reflex as rx
-##from .database.models import get_all_data
-from .pages import routes
+from prueba_reflex import routes
 
 
 
 app = rx.App()
-
-app.add_page(routes.index)
